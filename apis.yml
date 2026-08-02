@@ -1,7 +1,24 @@
 aid: wedidit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wedidit.png
 name: WeDidIt
-description: WeDidIt is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: WeDidIt was a Brooklyn, New York fundraising platform founded in 2012 by Su
+  Sanni and Benjamin Lamson that gave small nonprofits online donation pages, crowdfunding,
+  peer-to-peer, ticketing, and fiscal-sponsorship tools, plus a mobile app for in-person
+  card donations. A 500 Global portfolio company and 43North winner, it was acquired
+  by Allegiance Fundraising Group in June 2019 and its product folded into the Allegiance
+  suite. No public developer API was ever documented, and the wedid.it domain has since
+  lapsed to an unrelated site, so no API surface remains to profile.
 url: https://raw.githubusercontent.com/api-evangelist/wedidit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,18 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-defunct: acquired by Allegiance Fundraising Group (2019-06-25); wedid.it domain no
+  longer operated by the company
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Nonprofits
+- Fundraising
+- Crowdfunding
+- Donations
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wedidit-domain-security.yml
 - type: Website
   url: https://wedid.it
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://wedid.it
+host: https://wedid.it
+note: >-
+  All /.well-known/ probes returned HTTP 403 (Cloudflare bot protection on the
+  current domain holder). The wedid.it domain no longer belongs to the WeDidIt
+  fundraising company — as of a 2026-05-21 Wayback snapshot it serves unrelated
+  Italian casino SEO content. robots.txt (200) carries only the Cloudflare
+  managed Content-Signal block. No discovery surface exists.
+documents:
+- path: /.well-known/security.txt
+  status: 403
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
+- path: /llms.txt
+  status: 403
+- path: /robots.txt
+  status: 200
